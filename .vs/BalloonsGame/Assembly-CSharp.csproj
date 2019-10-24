@@ -64,11 +64,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Balloon.cs" />
+    <Compile Include="Assets\Scripts\DrawLine2D.cs" />
+    <Compile Include="Assets\Scripts\LineSpawner.cs" />
+    <Compile Include="Assets\Scripts\point_script.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VuforiaScripts">
+      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -78,6 +87,9 @@
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="VuforiaEditorScripts">
+      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
@@ -91,23 +103,14 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="VuforiaScripts">
-      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
-    </Reference>
-    <Reference Include="VuforiaEditorScripts">
-      <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity/2019.2.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
