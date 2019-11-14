@@ -17,7 +17,7 @@ public class Balloon : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello!");
-        transform.position = new Vector3(Random.Range(-10.0f, 10.0f), -8.5f, 0);
+        //transform.position = new Vector3(Random.Range(-10.0f, 10.0f), -8.5f, 0);
     }
 
    

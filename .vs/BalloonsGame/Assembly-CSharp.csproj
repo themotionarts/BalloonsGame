@@ -64,9 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Balloon.cs" />
-    <Compile Include="Assets\Scripts\DrawLine2D.cs" />
-    <Compile Include="Assets\Scripts\LineSpawner.cs" />
-    <Compile Include="Assets\Scripts\point_script.cs" />
+    <Compile Include="Assets\Scripts\DrawLine.cs" />
+    <Compile Include="Assets\Scripts\Fall.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/BalloonsGame/.vs/BalloonsGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
