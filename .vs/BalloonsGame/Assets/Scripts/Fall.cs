@@ -21,5 +21,7 @@ public class Fall : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
             Physics2D.gravity = new Vector2(0, -5);
 
+        
+
     }
 }
