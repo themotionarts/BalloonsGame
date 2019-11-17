@@ -17,6 +17,7 @@ public class Balloon : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello!");
+        transform.position = new Vector3(0f, -5.0f, 0);
         //transform.position = new Vector3(Random.Range(-10.0f, 10.0f), -8.5f, 0);
     }
 
@@ -26,10 +27,13 @@ public class Balloon : MonoBehaviour
         transform.Translate(Vector3.left * _speed * Mathf.Cos(Time.time) * Time.deltaTime);
         transform.Translate(Vector3.up * _upspeed * Time.deltaTime * (score / 5 + 1));
 
-        if (transform.position.y > 8.5f)
-            transform.position = new Vector3(Random.Range(-10.0f, 10.0f), -8.5f, 0);
+        if (transform.position.x > 3.55f)
+            transform.position = new Vector3(3.55f, transform.position.y, 0);
 
-        
+        if (transform.position.x < -3.55f)
+            transform.position = new Vector3(-3.55f, transform.position.y, 0);
+
+
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
