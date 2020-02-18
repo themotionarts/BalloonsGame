@@ -10,13 +10,15 @@ public class DrawLine : MonoBehaviour
     private GameObject currentLine;
 
     public LineRenderer lineRenderer;
-    public EdgeCollider2D edgeCollider;
+    //public EdgeCollider2D edgeCollider;
     public List<Vector2> fingerPositions;
+    public PolygonCollider2D polygonCollider;
+    public CircleCollider2D circleCollider;
 
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -41,13 +43,17 @@ public class DrawLine : MonoBehaviour
     {
         currentLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity);
         lineRenderer = currentLine.GetComponent<LineRenderer>();
-        edgeCollider = currentLine.GetComponent<EdgeCollider2D>();
+        //edgeCollider = currentLine.GetComponent<EdgeCollider2D>();
+        circleCollider = currentLine.GetComponent<CircleCollider2D>();
+        polygonCollider = currentLine.GetComponent<PolygonCollider2D>();
         fingerPositions.Clear();
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         lineRenderer.SetPosition(0, fingerPositions[0]);
         lineRenderer.SetPosition(1, fingerPositions[1]);
-        edgeCollider.points = fingerPositions.ToArray();
+        //edgeCollider.points = fingerPositions.ToArray();
+        polygonCollider.points = fingerPositions.ToArray();
+
     }
 
     void UpdateLine(Vector2 newFingerPos)
@@ -55,6 +61,7 @@ public class DrawLine : MonoBehaviour
         fingerPositions.Add(newFingerPos);
         ++lineRenderer.positionCount;
         lineRenderer.SetPosition(lineRenderer.positionCount - 1, newFingerPos);
-        edgeCollider.points = fingerPositions.ToArray();
+        //edgeCollider.points = fingerPositions.ToArray();
+        polygonCollider.points = fingerPositions.ToArray();
     }
 }
